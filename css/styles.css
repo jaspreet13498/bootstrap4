@@ -39,5 +39,48 @@ body {
 }
 
 .card {
-    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
+
+.footer {
+    padding-top: 20px;
+}
+
+.btn1 {
+    padding-left: 115px;
+}
+
+.mycustombtn {
+    padding-left: 30px;
+    padding-right: 0px;
+}
+
+.date1 {
+    margin-left: 32px;
+}
+
+.main {
+    display: flex;
+}
+
+.btn {
+    flex-direction: column;
+    margin-left:8px;
+}
+
+.headerbtn {
+    margin-top: 50px;
+    padding-left: 6px;
+}
+
+.mainbtn {
+    padding-left: 35px;
+    padding-right: 35px; 
+}
+
+a[ id= "EXE_DIV1" ]:target ~ #EXE_MAIN 
+div.card {
+    -webkit-transform: translateY( 0px);
+    transform: translateY( 0px );
+  }
