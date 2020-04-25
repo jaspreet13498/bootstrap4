@@ -58,6 +58,15 @@ body {
 
 .date1 {
     margin-left: 32px;
+    
+}
+
+@media screen and (max-width: 600px){
+    .date1 {
+
+    margin-left: 8px;
+    padding-right:8px;
+    }
 }
 
 .main {
@@ -68,13 +77,26 @@ body {
     flex-direction: column;
     margin-left:8px;
 }
+@media screen and (max-width: 600px){
+    .btn {
+
+        margin-left: -58px;
+    }
+}
 
 .headerbtn {
     margin-top: 50px;
     padding-left: 6px;
+    
 }
 
 .mainbtn {
     padding-left: 35px;
     padding-right: 35px; 
+}
+.card-header {
+    color:white;
+}
+a {
+    color: black;
 }
