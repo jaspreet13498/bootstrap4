@@ -78,9 +78,3 @@ body {
     padding-left: 35px;
     padding-right: 35px; 
 }
-
-a[ id= "EXE_DIV1" ]:target ~ #EXE_MAIN 
-div.card {
-    -webkit-transform: translateY( 0px);
-    transform: translateY( 0px );
-  }
