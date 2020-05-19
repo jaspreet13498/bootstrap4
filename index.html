@@ -38,6 +38,8 @@
         </div>
     </div>
     </nav>
+
+    <!-- Login Modal -->
     <div id="loginModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
@@ -68,6 +70,7 @@
             </div>
         </div>
     </div>
+
     <header class="jumbotron">
             <div class="container">
                 <div class="row row-header">
@@ -78,21 +81,97 @@
                 <div class="col-12 col-sm-3 align-self-centr">
                     <img src="img/logo.png" class="img-fluid">
                 </div>
-                <form>
-                    
-                    <div class="form-group row">
-                        <div class="offset-2 col-md-3 headerbtn">
-                            <button type="button" class="btn btn-warning mainbtn" 
-                                data-toggle="tooltip" data-html="true" data-placement="bottom" 
-                                title="Or call us at <br><strong>+852 12345678 </strong>">
-                                <a href="#click"><strong>Reserve Table</strong></a>
+                <form>    
+                <div class="form-group row">
+                    <div class="offset-2 col-md-3 headerbtn">
+                    <button type="button" class="btn btn-warning mainbtn">
+                                <a data-toggle="modal" data-target="#reserveModal"><strong>Reserve Table</strong></a>
                             </button>
                         </div>
                     </div>
                 </form>
             </div>
-        </div>
-    </header>
+        </header>
+
+        <!-- Reserve Table Modal -->
+        <div id="reserveModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Reserve Table</h4>
+                        <button type="button" class="close" data-dismiss="modal">
+                            &times;
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group row">
+                                <label for="Number of Guests" class="col-md-2 col-form-label ">Number Of Guests</label>
+                                <div class="col-md-10">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineradio id=" radio1"
+                                            value="option1">
+                                        <label class="form-check-label" for="radio1">1</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineradio" id="radio2"
+                                            value="option1">
+                                        <label class="form-check-label" for="radio2">2</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineradio" id=" radio3"
+                                            value="option3">
+                                        <label class="form-check-label" for="radio3">3</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineradio" id=" radio4"
+                                            value="option4">
+                                        <label class="form-check-label" for="radio4">4</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineradio" id=" radio5"
+                                            value="option5">
+                                        <label class="form-check-label" for="radio5">5</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineradio id=" radio6"
+                                            value="option6">
+                                        <label class="form-check-label" for="radio6">6</label>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="Section" class="col-md-2 col-form-label label1">Section</label>
+                                    <div class=" col-12 col-md-10">
+                                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                            <input type="radio" id="r1" value="opt1" checked>
+                                            <label class="btn btn-success l1 active" for="r1" name="inradio">Non-Smoking</label>
+                                            <input type="radio" id="r2" value="opt2">
+                                            <label class="btn btn-danger" id="r3" for="r2" name="inradio">Smoking</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="Date and Time" class="col-md-2 col-form-label mycustombtn">Date And Time</label>
+                                    <div class="date">
+                                        <input type="text" class="form-control date1" name="date" id="date" placeholder="Date">
+                                    </div>
+                                    <div class="time">
+                                        <input type="text" class="form-control time1" name="time" id="time" placeholder="Time">
+                                    </div>
+                                </div>
+                                <div class="form-group row btn">
+                                    <div class="btn1">
+                                        <button type="submit" class="btn btn-primary">
+                                            Reserve
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>     
+            </div>
+        </div>       
 
     <div class="container">
         <div class="row row-content">
@@ -141,6 +220,7 @@
                 </div>
             </div>
         </div>
+
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Our Lipsmacking Culinary Creations</h3>
@@ -156,8 +236,6 @@
                 </div>
             </div>
         </div>
-
-
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 col-md-3">
                 <h3>This Month's Promotions</h3>
@@ -166,9 +244,9 @@
                     <div class="media">
                         <div class="media-body">
                         <h2>Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
-                    <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing 
-                    appetizers, six main entrees and five choicest desserts. 
-                    Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                        <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing 
+                        appetizers, six main entrees and five choicest desserts. 
+                        Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
                         </div>      
                         <img src="img/buffet.png" class="d-flex ml-3 img-thumbnail align-self-center" alt="Buffet">
                     </div>
@@ -185,7 +263,7 @@
                     <div class="media-body">
                         <h2>Alberto Somayya</h2>
                 <h4>Executive Chef</h4>
-                <p  id="click">Award winning three-star Michelin chef with wide International experience having worked 
+                <p>Award winning three-star Michelin chef with wide International experience having worked 
                     closely with whos-who in the culinary world, he specializes in creating 
                     mouthwatering Indo-Italian fusion experiences. </p>
                     </div>
@@ -193,60 +271,7 @@
             </div>
         </div>
     </div>
-    <div class="col-12 col-sm-8 offset-md-2" >
-        <div class="card">
-            <h2 class="card-header bg-warning" >Reserve a Table</h2>
-            <div class="card-body main">
-                <form>
-                    <div class="form-group row">
-                        <label for="Number of Guests" class="col-md-2 col-form-label ">Number Of Guests</label>
-                        <div class="col-md-10">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineradio id="radio1" value="option1">
-                                <label class="form-check-label" for="radio1">1</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineradio" id="radio2" value="option1">
-                                <label class="form-check-label" for="radio2" >2</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineradio id="radio3" value="option3">
-                                <label class="form-check-label" for="radio3">3</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineradio id="radio4" value="option4">
-                                <label class="form-check-label" for="radio4">4</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineradio id="radio5" value="option5">
-                                <label class="form-check-label" for="radio5">5</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineradio id="radio6" value="option6">
-                                <label class="form-check-label" for="radio6">6</label>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="Date and Time" class="col-md-2 col-form-label mycustombtn">Date And Time</label>
-                            <div class="date">
-                                <input type="text" class="form-control date1" name="date" id="date" placeholder="Date">
-                            </div>
-                            <div class="time">
-                                <input type="text" class="form-control time1" name="time" id="time" placeholder="Time">
-                            </div>
-                        </div>
-                        <div class="form-group row btn">
-                            <div class="btn1">
-                                <button type="submit" class="btn btn-primary">
-                                    Reserve
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
+    
     <footer class="footer">
         <div class="container">
             <div class="row">              
@@ -288,15 +313,16 @@
            </div>
         </div>
     </footer>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
+    <!-- <script>
         $(document).ready(function(){
             $('[data-toggle="tooltip"]').tooltip();
         });
-    </script>
-</body>
+    </script> -->
 
+</body>
 </html>
